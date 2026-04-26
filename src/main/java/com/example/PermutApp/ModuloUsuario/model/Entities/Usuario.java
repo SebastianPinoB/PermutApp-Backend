@@ -35,6 +35,6 @@ public class Usuario {
    @Column(nullable = false)
    private int usu_prom_rep;
    @Column(nullable = false)
-   private boolean usu_activo;
+   private boolean usu_activo = true;
 
 }

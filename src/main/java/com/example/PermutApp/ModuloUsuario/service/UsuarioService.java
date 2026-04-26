@@ -40,7 +40,7 @@ public class UsuarioService {
       nuevoUsuario.setUsu_email(nuevo.getUsu_email());
       nuevoUsuario.setUsu_pass(nuevo.getUsu_pass());
       nuevoUsuario.setUsu_prom_rep(nuevo.getUsu_prom_rep());
-      nuevoUsuario.setUsu_activo(nuevo.isUsu_activo());
+      nuevoUsuario.setUsu_activo(true);
 
       return usuarioRepository.save(nuevoUsuario);
    }
@@ -69,7 +69,6 @@ public class UsuarioService {
          usuario.setUsu_email(nuevo.getUsu_email());
          usuario.setUsu_pass(nuevo.getUsu_pass());
          usuario.setUsu_prom_rep(nuevo.getUsu_prom_rep());
-         usuario.setUsu_activo(nuevo.isUsu_activo());
          return usuarioRepository.save(usuario);
       }
    }

@@ -30,7 +30,7 @@ public class UsuarioController {
    }
 
    @GetMapping("/{idUsuario}")
-   public Usuario busacarPorIdUsuario(@PathVariable Integer idUsuario) {
+   public Usuario buscarPorIdUsuario(@PathVariable Integer idUsuario) {
       return usuarioService.obtenerPorId(idUsuario);
    }
    
